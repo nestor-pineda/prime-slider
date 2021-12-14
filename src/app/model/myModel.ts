@@ -1,3 +1,7 @@
+export interface CardsModel {
+  cards: iCard;
+}
+
 export interface iCard {
   img: Img;
   title: string;

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { iCard } from './model/myModel';
+import { CardsModel } from './model/myModel';
 
 @Component({
   selector: 'app-root',
@@ -7,15 +7,17 @@ import { iCard } from './model/myModel';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  public cardModel: iCard;
+  public cardsModel: CardsModel;
   constructor() {
-    this.cardModel = {
-      img: {
-        src: 'https://picsum.photos/360',
-        alt: 'Just some reandom img',
+    this.cardsModel = {
+      cards: {
+        img: {
+          src: 'https://picsum.photos/360',
+          alt: 'Just some reandom img',
+        },
+        title: 'This is the title',
+        text: 'Some text',
       },
-      title: 'This is the title',
-      text: 'Some text',
     };
   }
   ngOnInit(): void {}

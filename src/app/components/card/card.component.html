@@ -1,11 +1,11 @@
 <p-card
-  header="{{ card.title }}"
-  subheader="{{ card.text }}"
+  header="{{ card.cards.title }}"
+  subheader="{{ card.cards.text }}"
   [style]="{ width: '360px' }"
   styleClass="p-card-shadow"
 >
   <ng-template pTemplate="header">
-    <img alt="{{ card.img.alt }}" src="{{ card.img.src }}" />
+    <img alt="{{ card.cards.img.alt }}" src="{{ card.cards.img.src }}" />
   </ng-template>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
