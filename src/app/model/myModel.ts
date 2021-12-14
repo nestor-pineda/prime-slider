@@ -1,5 +1,5 @@
 export interface CardsModel {
-  cards: iCard;
+  cards: iCard[];
 }
 
 export interface iCard {
